@@ -1,4 +1,4 @@
-
+@import"(https://fonts.google.com/specimen/Outfit)";
 :root{
     
     --Mobile-size: 375px;
@@ -22,6 +22,9 @@
 }
 
 
+
+
+
 body{
     display: flex;
     width: 100%;
@@ -34,25 +37,38 @@ body{
 }
 
 
+
 .container{
     display: flex;
     position: absolute;
-    top: 10%;
+    top: 5%;
     background: var(--neutral-Very-dark-blue-card-BG);
-    width: 24%;
+    width: 10%;
     height: 80%;
     justify-content: center;
-    padding-top: 5.5%;
+    padding-top: 4%;
     border-radius: 4%;
 }
 
 .main-logo{
     border-radius: 3%;
     height: 80%;
-    width: 97%;
+    width: 90%;
     display: flex;
+    transition: all 1s;
+}
+
+
+.main-logo:hover{
+    width: 94%;
+}
+
+.img-header{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .container-content{
@@ -60,16 +76,20 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .header-test{
     display: flex;
-    font-size: var(--Font-size-paragraph);
+    position: relative;
+    right: 17.3%;
+    margin-bottom: 6%;
+    font-size: x-large;
     color: var(--neutral-White);
     font-family: var(--Family);
     font-weight: var(--weight-xlarge);
-
 }
+
 
 .description{
     display: flex;
@@ -77,6 +97,180 @@ body{
     font-size: var(--Font-size-paragraph);
     color: var(--primary-Soft-blue);
     font-weight: var(--Weights-small);
-    left: 4%;
-    text-align: left;
+    position: relative;
+    top: -5px;
+    width: 90%;
 }
+
+
+.first-section{
+    display: flex;
+    flex-direction: row;
+    gap: 34%;
+    width: 100%;
+    margin-bottom: 13%;
+    margin-top: 6%;
+    justify-content: center;
+    text-align: center;
+}
+
+.price-and-time-left{
+    font-size: var(--Font-size-paragraph);
+    font-weight: var(--weight-xlarge);
+    color: var(--primary-Cyan);
+    font-family: var(--Family);
+}
+
+.time-left{
+    color: var(--primary-Soft-blue);
+    display: flex;
+}
+
+.profile{
+    height: 30px;
+    border: 1px solid var(--neutral-White);
+    border-radius: 50%;
+}
+
+.footer-section{
+    display: inline;
+    position: relative;
+    right: 17.2%;
+    margin-top: -2%;
+}
+
+
+.inline{
+    display: inline;
+    position: relative;
+    top: -48%;
+    left: 20%;
+  
+}
+
+.inline-style{
+    font-size: var(--Font-size-paragraph);
+    font-weight: var(--Weight-xlarge);
+    color: white;
+}
+
+.colored{
+    color: var(--primary-Soft-blue)
+}
+
+
+.white{
+    color: var(--primary-Cyan);
+}
+a{
+    text-decoration: none;
+}
+
+fieldset{
+    border: 1px solid var(--neutral-Very-dark-blue-line);
+    width: 88%;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    bottom: 5%;
+}
+
+
+
+@media  (max-width: 375px){
+    
+    .container{
+        display: flex;
+        position: absolute;
+        top: 5%;
+        background: var(--neutral-Very-dark-blue-card-BG);
+        width: 76%;
+        height: 82%;
+        justify-content: center;
+        padding-top: 7%;
+        border-radius: 4%;
+    }
+    
+    
+  
+    .header-test{
+        display: flex;
+        position: relative;
+        right: 16.5%;
+        margin-bottom: 6%;
+        font-size: large;
+        color: var(--neutral-White);
+        font-family: var(--Family);
+        font-weight: var(--weight-xlarge);
+    }
+    
+    
+    .description{
+        display: flex;
+        font-family: outfit;
+        font-size: var(--font-size-small);
+        color: var(--primary-Soft-blue);
+        font-weight: var(--Weights-small);
+        position: relative;
+        top: -5px;
+        width: 87%;
+        right: 2%;
+    }
+
+
+    .main-logo{
+        border-radius: 3%;
+        height: 80%;
+        width: 95%;
+        display: flex;
+        transition: all 1s;
+    }
+
+    .first-section{
+        margin-bottom: 18%;
+        gap: 34%;
+    }
+    
+    .price-and-time-left{
+        font-size: var(--font-size-small);
+    }
+    
+  
+    
+    .profile{
+        height: 30px;
+        border: 1px solid var(--neutral-White);
+        border-radius: 50%;
+    }
+    
+
+    .footer-section{
+        display: inline;
+        position: relative;
+        right: 20%;
+        margin-top: -1%;
+    }
+
+    .inline{
+        display: inline;
+        position: relative;
+        top: -48%;
+        left: 37%;
+      
+    }
+    
+    .inline-style{
+        font-size: var(--font-size-small);
+        font-weight: var(--Weight-xlarge);
+        color: white;
+    }
+
+
+} 
+
+
+
+
+
+
